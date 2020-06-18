@@ -1,0 +1,115 @@
+body{
+  background:radial-gradient( #666666 15%,#00B7EA 150%);
+  
+}
+#topic
+{
+  color:white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+#creator
+{
+  color:#ffffff;
+  font-size:30px;
+  margin-left:50%;
+}
+#container
+{
+  width:270px;
+  height:160px;
+  border-radius:100%;
+  background: conic-gradient(
+    #55B7A4 0%,
+    #4CA493 40%, 
+    #FFFFFF 40%,
+    #FFFFFF 60%,
+    #336D62 60%,
+    #2A5B52 100%
+    );
+    
+  z-index: -2;
+  text-align: center;
+  padding-top: 95px;
+  margin-left: 40%;
+  margin-top: 15%;
+  
+}
+#text
+{
+  font-size: xx-large;
+  font-weight: 700;
+  color:#FFFFFF;
+  padding-top: 90px;
+}
+#circle
+{
+  background-color:#010F1C;
+  width:250px;
+  height:220px;
+  border-radius:100%;
+  margin-bottom:30%;
+  margin-top:-40%;
+  margin-left:4%;
+  z-index: -1;
+  
+}
+#pointer_container
+{
+  width:280px;
+  height:170px;
+  border-radius:100%;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+  
+}
+#pointer
+{
+  background-color:#FFFFFF;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  margin-left:46%;
+  margin-top:-128%;
+  
+}
+
+@keyframes rotate{
+  from
+  {
+    transform:rotate(0deg);
+  }
+  to
+  {
+    transform:rotate(360deg);
+  }
+}
+.grow
+{
+  animation:grow 3s linear forwards
+}
+.shrink
+{
+  animation:shrink 3s linear forwards
+}
+@keyframes grow{
+  from
+  {
+    transform:scale(1);
+  }
+  to
+  {
+    transform:scale(1.2);
+  }
+}
+@keyframes shrink{
+  from
+  {
+    transform:scale(1.2);
+  }
+  to
+  {
+    transform:scale(1);
+  }
+}
